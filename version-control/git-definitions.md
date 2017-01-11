@@ -1,4 +1,4 @@
-# Git Definitions
+# Git Definitions (Hi I'm here)
 
 **Instructions: ** Define each of the following Git concepts.
 
