@@ -31,7 +31,14 @@ a {
 }
 
 #side-a li{
-  padding-top: 20px;
+  padding-top: 20px;  
+}
+
+@media (max-width: 400px) {
+  side-a ul {display: none;
+
+  }
+  side-a select {display: inline-block; }
 }
 
 #side-b {

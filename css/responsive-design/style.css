@@ -13,7 +13,7 @@ cite {
 
   list-style-type: none;
   padding-left: 0px;
-  width: 200px;
+  width: 20%;
   display: inline-block;
   vertical-align: top;
  
@@ -40,12 +40,19 @@ figcaption {
 }
 
 body {
-  width: 960px;
+  max-width: 960px;
+  
   
 }
 
 main {
-  width: 756px;
+  width: 70%;
   display: inline-block;
   vertical-align: top;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
 }
