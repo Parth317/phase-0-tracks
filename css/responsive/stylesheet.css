@@ -33,6 +33,9 @@ a {
 #side-a li{
   padding-top: 20px;  
 }
+side-a select {
+  display: none;
+}
 
 @media (max-width: 400px) {
   side-a ul {display: none;
