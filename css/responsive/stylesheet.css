@@ -33,15 +33,21 @@ a {
 #side-a li{
   padding-top: 20px;  
 }
-side-a select {
+#side-a select {
   display: none;
 }
 
 @media (max-width: 400px) {
-  side-a ul {display: none;
+  #side-a ul {display: none;
 
   }
-  side-a select {display: inline-block; }
+  #side-a select {display: inline-block; }
+}
+
+@media (max-width: 350px) {
+  div p {font-size: .5em;
+
+  }
 }
 
 #side-b {
