@@ -1,8 +1,9 @@
 .hat-holder {
-	position: absolute;
-	margin-left: 500px;
-	width: 115;
-	height:180;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	
 
 }
 
@@ -29,4 +30,4 @@
 	top: 50px;
 	
 }
-* {outline: 1px red solid;}
+/** {outline: 1px red solid;}*/
