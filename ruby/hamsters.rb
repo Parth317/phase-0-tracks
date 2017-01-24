@@ -3,7 +3,9 @@ puts "Please Enter your hamster's name:"
 
 puts "From 1-10, what would your volume preference be?"
 	volume = gets.chomp
+	volume = volume.to_i
 
+	
 puts "Please enter your hamster's fur color:"
 	fur = gets.chomp
 
@@ -17,6 +19,11 @@ puts "What's your hamster's est age?"
 	else
 		number=number.to_i
 	end
-	p number	
+		
 
 
+puts "Name: #{name}"
+puts "Volume: #{volume}"
+puts "Fur: #{fur}"
+puts "Adoption: #{adoption}"
+puts "Number: #{number}"
