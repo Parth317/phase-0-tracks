@@ -12,6 +12,11 @@ puts "Is your hamster a good candidate for adoption? Please answer (Y/N):"
 
 puts "What's your hamster's est age?"
 	number = gets.chomp
-	number = number unless number.nil?
-		
-end
+	if number == ''
+		number =nil
+	else
+		number=number.to_i
+	end
+	p number	
+
+
