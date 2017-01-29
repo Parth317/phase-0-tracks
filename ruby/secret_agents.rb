@@ -1,12 +1,17 @@
 string = "abcd"
 def encrypt (string)
-	index = 0
+	alphabet = "abcdefghijklmnopqrstuvwxyz"
+	count = 0
 	#move every letter of a string one letter forward (abcd becomes bcde)
 	#length of string is 4
-	while string.length == 4
-		array = string.chars[0].next + string.chars[1].next + string.chars[2].next + string.chars[3].next
-		return array
+	string_2 = ' '
+	while count < string.length
+		alpha_list = alphabet[alphabet.index(string[count]) + 1]
+		string_2 += alpha_list
+		count += 1
+		
 end
+puts string_2
 end
 encrypt "abcd"
 
