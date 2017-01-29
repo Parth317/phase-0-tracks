@@ -13,7 +13,7 @@ end
 puts string_2
 end
 
-encrypt "abc"
+#encrypt "abc"
 
 #string = 'fbac'
 #alpha = 'abcdefghi...'
@@ -35,17 +35,29 @@ def decrypt (string)
  #find out where letter is in the index
  #access the letter right before it
  
-      #new_string = string.chars[0] + string.chars[1] + string.chars[2] + string.chars[3]    
-  #return array
-      #string[count
+    
       
-      new_char = alphabet[alphabet.index(string[count]) - 1]
-         #new_string = string.chars[0] + string.chars[1] 
+      new_char = alphabet[alphabet.index(string[count]) - 1]   
       new_string += new_char
     count += 1
   end
     puts new_string
 end
-decrypt "bcd"
+#decrypt "bcd"
 #decrypt(encrypt("swordfish"))
 #this nested method call works because it calls the outside method first, then calls the inside method. The encypt will be added to the decrypt.
+
+puts "Would you like to decrypt or encrypt a password?"
+	answer = gets.chomp
+			
+puts "Please enter your password:"
+	password = gets.chomp	
+
+	if answer == "encrypt"
+		puts encrypt(password)
+	elsif answer == "decrypt"
+		puts  decrypt(password)
+	
+	else
+		puts "You're a noob"
+end	
