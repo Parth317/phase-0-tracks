@@ -1,4 +1,3 @@
-string = "abcd"
 def encrypt (string)
 	alphabet = "abcdefghijklmnopqrstuvwxyz"
 	count = 0
@@ -13,7 +12,8 @@ def encrypt (string)
 end
 puts string_2
 end
-encrypt "abcd"
+
+encrypt "abc"
 
 #string = 'fbac'
 #alpha = 'abcdefghi...'
@@ -46,4 +46,6 @@ def decrypt (string)
   end
     puts new_string
 end
-decrypt "bcde"
+decrypt "bcd"
+#decrypt(encrypt("swordfish"))
+#this nested method call works because it calls the outside method first, then calls the inside method. The encypt will be added to the decrypt.
