@@ -1,14 +1,8 @@
 puts "How many employees will be processed?"
 employ_process = gets.chomp.to_i
 employees = 0
-until employees > employ_process
+until employees >= employ_process
 	
-
-
-
-	
-
-
 
 puts "What's your name?"
 	name = gets.chomp
@@ -40,6 +34,22 @@ puts "Would you like to enroll in the company's health insurance?"
 	else
 		health_insurance = false
 	end
+
+	allergy = false
+	until allergy 
+			puts "Can you please enter any allergies that you have?"
+	allergies = gets.chomp
+		if allergies == "done"
+			puts "Onto the next question!"
+		allergy = true	
+		elsif allergies == "sunshine"
+			
+		allergy = true	
+		else 
+			puts "Please tell me more!"
+					
+	end		
+	end
 				
 	#if age && year && bread 
 		##puts "Your age is correct and here's garlic bread!"
@@ -47,23 +57,28 @@ puts "Would you like to enroll in the company's health insurance?"
 		#puts "You're wrong. No garlic bread for you!"
 #end
 
-	if ageright == age && (health_insurance == true || garlicbread == true) && (vamp_name != true)
-		puts "probbaly not a vampire"
+	if ageright == age && (health_insurance == true || garlicbread == true) && (vamp_name != true) && allergies != "sunshine"
+		puts "probaly not a vampire"
 
-	elsif ageright != age && (garlicbread != true && health_insurance == true) || (health_insurance != true && garlicbread == true)
+	elsif ageright != age && (garlicbread != true && health_insurance == true) || (health_insurance != true && garlicbread == true) || (allergies == "sunshine")
 		puts " Probably a vampire!"
 
 	elsif ageright != age && (garlicbread == false) && (health_insurance == false)
 		puts "Almost certainly a vampire!"
+
+	elsif allergy == "sunshine" && (ageright == age) && (garlicbread == true) && (health_insurance == true)
+		puts "probably a vampire!"
+				
 
 	elsif vamp_name == true 
 		puts "Definitely a vampire!"
 
 	else
 		puts "Results inconclusive!"
+end
+
 employ_process = employ_process -1
 					
-end
 end
 
 	#if bread == "yes"
