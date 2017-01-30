@@ -1,3 +1,5 @@
+#asks how many times the loop will run for
+
 puts "How many employees will be processed?"
 employ_process = gets.chomp.to_i
 employees = 0
@@ -50,12 +52,8 @@ puts "Would you like to enroll in the company's health insurance?"
 					
 	end		
 	end
-				
-	#if age && year && bread 
-		##puts "Your age is correct and here's garlic bread!"
-	#else
-		#puts "You're wrong. No garlic bread for you!"
-#end
+	
+	#Added if/else statements to see if you're a vampire or not			
 
 	if ageright == age && (health_insurance == true || garlicbread == true) && (vamp_name != true) && allergies != "sunshine"
 		puts "probaly not a vampire"
@@ -83,18 +81,6 @@ puts "Actually, never mind! What do these questions have to do with anything? Le
 					
 end
 
-	#if bread == "yes"
-	#	puts "wants garlic bread"
-	#	garlicbread = true
 
-	#else garlicbread = false
-				
-		
-	#end
-
-	#if ageright && garlicbread 
-	#	puts "probably not a vampire"
-		
-	#end
 
 	
