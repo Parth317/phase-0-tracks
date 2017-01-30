@@ -78,6 +78,8 @@ puts "Would you like to enroll in the company's health insurance?"
 end
 
 employ_process = employ_process -1
+
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
 					
 end
 
