@@ -12,13 +12,31 @@ puts "What's your decor theme going to be?"
 
 #create a hash and a key
 info = {
-	:age => age
+	:age => age,
+	:name => name,
+	:number_of_child => number_of_child,
+	:theme => theme 
 
 }
 
 #print the hash and then let the user change a key
 p info
-info["name"] = gets.chomp
-puts "change any info"
-info["age"] = gets.chomp.to_i
+puts "What info would you want to change?"
+	category = gets.chomp
+	category.to_sym
+puts "What would you like to change it to?"
+	value = gets.chomp
+
+	if category.to_sym == :age
+		info[:age] = value.to_i
+	elsif category.to_sym == :name
+		info[:name] = value
+	elsif category.to_sym == :number_of_child
+		info[:number_of_child] = value.to_i
+	elsif category.to_sym == :theme
+		info[:theme] = value
+	else
+		puts "Oh ok"
+				
+end
 p info
