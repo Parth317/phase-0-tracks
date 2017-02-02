@@ -68,6 +68,3 @@ p cool_integers.reject {|key, value| key < 3}
 p cool_integers.delete_if {|digit, word| digit.odd? }
 p food_amount.select {|amount, food| amount.even?}
 p food_amount.keep_if{|digit, word| digit > 10}
-
-
-
