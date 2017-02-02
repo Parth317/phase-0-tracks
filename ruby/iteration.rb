@@ -1,3 +1,4 @@
+
 colors = ["blue", "red", "orange", "green", "maroon"]
 snacks = { 
 	"Chocolate" => "twix",
@@ -29,48 +30,44 @@ snacks.each do |snack, name|
 	puts "My fav #{snack} is #{name}"
 end
 
-
+###############################
 
 
 integers = [1, 2, 5, 10, 200, 4, 3]
+awesome_numbers = [120, 420, 888, 335, 12, 317, 1225]
+alphabet = ["a", "b", "c", "z", "t", "p"]
 
-#p integers
-
-def less_than_9(int)
-	int.reject {|numbers| numbers < 9}
-end
-
-#p less_than_9(integers)
-
-def greater_than_9(int)
-	int.reject {|numbers| numbers > 9}
-end
-
-#p greater_than_9(integers)
-
-alphabet = ["a", "l", "b", "p", "r"]
-	
-def sorting(arr)
-	if arr.length > 3
-		arr.sort
-	end	
-end
-
-#p sorting(alphabet)
-
-
+p integers.reject {|numbers| numbers > 9}
+p integers.delete_if {|num| num.odd? }
+p awesome_numbers.keep_if {|num| num < 150}
+p [12345, 5,8, 9, 120].select {|num| num.even? }
+p integers.delete_if {|num| num.even? }
 
 
 #########################
 
-integers = { 
+cool_integers = { 
 	1 => "one",
 	2 => "two",
 	3 => "three",
+	100 => "one hundred", 
+	50 => "fifty"
 }
 
-def less_than_2(hash)
-	hash.delete(2) 
-end
+food_amount = { 
+	4 => "pizza", 
+	10 => "pepperoni", 
+	12 => "cilantro", 
+	2 => "pho", 
+	700 => "eggs benedict", 
+	17 => "mac and cheese",
+	13 => "ramen"
+}
 
-p less_than_2(integers)
+p cool_integers.reject {|key, value| key < 3}
+p cool_integers.delete_if {|digit, word| digit.odd? }
+p food_amount.select {|amount, food| amount.even?}
+p food_amount.keep_if{|digit, word| digit > 10}
+
+
+
