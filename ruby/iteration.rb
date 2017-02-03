@@ -44,6 +44,14 @@ p [12345, 5,8, 9, 120].select {|num| num.even? }
 p integers.delete_if {|num| num.even? }
 
 
+while awesome_numbers.length > 3
+	awesome_numbers.each do |x| 
+		next if x < 300
+		awesome_numbers.delete x
+	end
+end
+p awesome_numbers
+
 #########################
 
 cool_integers = { 
@@ -65,6 +73,11 @@ food_amount = {
 }
 
 p cool_integers.reject {|key, value| key < 3}
+#while x < 3 
+	#do something with cool integers
+
 p cool_integers.delete_if {|digit, word| digit.odd? }
 p food_amount.select {|amount, food| amount.even?}
 p food_amount.keep_if{|digit, word| digit > 10}
+
+
