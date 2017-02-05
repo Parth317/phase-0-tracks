@@ -25,4 +25,4 @@ dealership = {
 p dealership['Service advisors'][1]
 p dealership[:Locations][:how_many_locations]
 p dealership[:Locations][:cities]
-p dealership[:car_make][:cars_avail]
+
