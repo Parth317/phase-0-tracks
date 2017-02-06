@@ -2,10 +2,10 @@
 #then create a fake name with the given first/last names. 
 #6,7,8,9,-1 = Patel
 
-#puts "Please enter your real name!"
-	#real_name = gets.chomp.chars.map!{|vowel| vowel.next}.join('')
+puts "Please enter your real name!"
+	real_name = gets.chomp.chars.map!{|vowel| vowel.next}.join('')
 
-#p real_name
+p real_name
 
 	
 #create a loop that allows the user to enter a name and return with a fake name
