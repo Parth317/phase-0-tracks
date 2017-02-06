@@ -10,26 +10,40 @@
 	
 #create a loop that allows the user to enter a name and return with a fake name
 #the loop will continue until they decide to type 'quit'
-	name = false
-	until name 
-		puts "Enter a name"
-		name = gets.chomp
-		name = true
+replace = {
+  "A" => "Z",
+  "B" => "Y",
+  "C" => "G",
+  "D" => "W",
+  "E" => "V",
+  "F" => "U",
+  "G" => "T",
+  "H" => "S",
+  "I" => "R",
+  "J" => "Q",
+  "K" => "P",
+  "L" => "O",
+  "M" => "N",
+  "N" => "M",
+  "O" => "L",
+  "P" => "K",
+  "Q" => "I",
+  "R" => "I",
+  "S" => "H",
+  "T" => "G",
+  "U" => "F",
+  "V" => "E",
+  "W" => "D",
+  "X" => "O",
+  "Y" => "B",
+  "Z" => "A"
+}
+	puts "Please enter your name!"
+input = gets.chomp.upcase
 
-
-	if name.include? 'a'
-		name.gsub(gets, 'o')
-	elsif name == "quit"
-		puts "Okay"
-
-		
+output = ""
+input.each_char do |c|
+    output << replace[c]
 end
+puts output
 
-	new_name = {
-		gets.chomp => "o"
-
-	}
-
-
-
-end
