@@ -22,7 +22,7 @@ class Puppy
   end
 
   def initialize
-  	#p "Initializing new puppy instance..."
+  	p "Initializing new puppy instance..."
   end
 
 end
@@ -38,4 +38,3 @@ a.dog_years(2)
 
 a.rip_paper
 
-a.initialize
