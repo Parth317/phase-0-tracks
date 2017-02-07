@@ -27,6 +27,16 @@ class Puppy
 
 end
 
+class Cat
+	def 
+		
+	end
+	index = 0
+	until index == 50
+	p 
+	index = index + 1	
+
+
 a = Puppy.new
 a.fetch("toy")
 
