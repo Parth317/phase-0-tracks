@@ -22,7 +22,7 @@ class Puppy
   end
 
   def initialize
-  	p "Initializing new puppy instance..."
+  	#p "Initializing new puppy instance..."
   end
 
 end
