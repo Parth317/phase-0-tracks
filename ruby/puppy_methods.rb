@@ -21,6 +21,10 @@ class Puppy
   	p "rips newspaper"
   end
 
+  def initialize
+  	p "Initializing new puppy instance..."
+  end
+
 end
 
 a = Puppy.new
@@ -33,3 +37,5 @@ a.roll_over
 a.dog_years(2)
 
 a.rip_paper
+
+a.initialize
