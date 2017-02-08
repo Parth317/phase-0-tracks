@@ -27,16 +27,6 @@ class Puppy
 
 end
 
-class Cat
-	def 
-		
-	end
-	index = 0
-	until index == 50
-	p 
-	index = index + 1	
-
-
 a = Puppy.new
 a.fetch("toy")
 
@@ -47,4 +37,52 @@ a.roll_over
 a.dog_years(2)
 
 a.rip_paper
+
+class Class
+    b = Class.new
+
+    arr_init = Array.new
+    arr_init = []
+
+    arr_m1 = Array.new
+    arr_m1 = []
+
+    arr_m2 = Array.new
+    arr_m2 = []
+    index = 0
+    until index == 50
+        def initialize
+            #p "Initializing class sequence..."
+        end
+
+        def method1
+            #p "This is method 1"
+            7
+        end
+
+        def method2
+            #p "This is method 2"
+        end
+        arr_init << initialize
+        arr_m1 << b.method1
+        arr_m2 << b.method2
+        data_hash = {
+        :initial => arr_init,
+         :method_1 => arr_m1,
+         :method_2 => arr_m2
+    }
+    
+     
+     data_hash.each do 
+      p "#{index} * #{Class.method1} ="
+      p index * method1
+      initialize
+      Class.method1
+      Class.method2
+     end
+     
+        index = index + 1
+    end
+
+end
 
