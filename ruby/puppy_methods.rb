@@ -38,6 +38,7 @@ a.dog_years(2)
 
 a.rip_paper
 
+#create a new class
 class Class
     b = Class.new
 
