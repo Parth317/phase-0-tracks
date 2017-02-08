@@ -48,7 +48,7 @@ end
  update_quantity("tacos", my_list, 5)
 p pretty_list(my_list)
 
-
+#create a new list, but have each of the items contain different quantities
  new_list = create_list("lemonade tomatoes onions")
  add_item("ice cream", new_list)
  update_quantity("lemonade", new_list, 2)
