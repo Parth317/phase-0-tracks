@@ -57,3 +57,20 @@ p pretty_list(my_list)
  remove_item("lemonade", new_list)
  update_quantity("ice cream", new_list, 1)
 p pretty_list(new_list)
+
+#I learned that it's essential to pseudocode to help you organize your code,
+	#and make it more readable
+
+#With hashes, you can change, add, and remove the keys,
+	#which made it very helpful in this situation
+
+#A method returns whatever you have done inside it
+
+#You can pass something like new_item, existing_list, new_list 
+	#as an argument for your methods
+
+#You can pass info between methods by setting a new argument = to 
+	#a previous one
+
+#I definitely have a better understanding of using methods now,
+	#but using the |   | still confuses me sometimes. 
