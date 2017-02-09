@@ -7,7 +7,12 @@ class Santa
 	end
 
 	def eat_milk_and_cookies(type)
-		p "That was a good #{type}!"		
+		p "That was a good #{type}!"
+	type		
+	end
+
+	def initialize
+		p "Initializing Santa instance..."
 	end
 
 end
