@@ -1,11 +1,12 @@
 class Santa
 
-	def speak(ho)
-		puts "Ho, ho, ho! Haaaapy holidays!"
+	def speak(holidays)
+		p "Ho, ho, ho! Haaaapy #{holidays}!"
 		
-	 ho	
+	 holidays	
 	end
 
 end
 
-
+a = Santa.new
+a.speak("holidays")
