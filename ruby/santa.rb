@@ -6,7 +6,12 @@ class Santa
 	 holidays	
 	end
 
+	def eat_milk_and_cookies(type)
+		p "That was a good #{type}!"		
+	end
+
 end
 
 a = Santa.new
 a.speak("holidays")
+a.eat_milk_and_cookies("choco chip cookie")
