@@ -20,12 +20,10 @@ class Santa
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer",
 				 "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 		@age = 0
-		
 	end
 
 	def reindeer_name
-		p "Santa's reindeer are #{@reindeer_ranking}"
-		
+		p "Santa's reindeer are #{@reindeer_ranking}"		
 
 	end
 
@@ -34,17 +32,23 @@ class Santa
 		
 	end
 
-
+	def celebrate_birthday
+		@new_age = @age + 1
+		p "Santa is now #{@new_age}"
+	
+		
+	end
 	
 
 end
-#Run the program
+#Driver Code
 a = Santa.new("male", "italian")
 a.speak("holidays")
 a.eat_milk_and_cookies("choco chip cookie")
 
 a.reindeer_name
 a.santa_age
+a.celebrate_birthday
 
 
 #add some diverse initializations
