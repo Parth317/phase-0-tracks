@@ -8,6 +8,7 @@ class Santa
 		p "Ho, ho, ho! Haaaapy #{holidays}!" 	
 	end
 
+
 	def eat_milk_and_cookies(type)
 		p "That was a good #{type}!"		
 	end
@@ -29,7 +30,7 @@ class Santa
 	def santa_age
 		p "Santa's age is #{@age}"	
 	end
-
+	
 	def celebrate_birthday
 		@new_age = @age + 1
 		p "Santa is now #{@new_age}"
@@ -54,6 +55,7 @@ class Santa
 	#def ethnicity
 	#	@ethnicity	
 	#end
+
 
 end
 #Driver Code
@@ -80,3 +82,20 @@ eating_cookies = ["always eating cookies", "never eating cookies"]
 weight.length.times do |i|
 	santas << Santa.new(weight[i], eating_cookies[i])
 end
+
+santas = []
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+example_genders.length.times do |i|
+  santas << Santa.new(example_genders[i], example_ethnicities[i])
+	def santas(example_genders, example_ethnicities)
+		 50.times do [example_genders.sample, example_ethnicities.sample]
+
+	 		end
+	 	end 	
+p santas.sample
+  
+end
+
+
+
