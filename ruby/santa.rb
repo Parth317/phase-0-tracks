@@ -35,7 +35,12 @@ class Santa
 	def celebrate_birthday
 		@new_age = @age + 1
 		p "Santa is now #{@new_age}"
-	
+	end
+
+	def get_mad_at(reindeer_new)
+		@reindeer_ranking.delete(reindeer_new)
+		@reindeer_ranking.push(reindeer_new)
+		p "You've been naughty, #{reindeer_new}! BAM! #{@reindeer_ranking}"
 		
 	end
 	
@@ -49,6 +54,7 @@ a.eat_milk_and_cookies("choco chip cookie")
 a.reindeer_name
 a.santa_age
 a.celebrate_birthday
+a.get_mad_at("Dancer")
 
 
 #add some diverse initializations
