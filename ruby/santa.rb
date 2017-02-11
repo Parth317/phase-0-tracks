@@ -33,16 +33,19 @@ class Santa
 		p "Santa's age is #{@age}"
 		
 	end
+
+
 	
 
 end
-
+#Run the program
 a = Santa.new("male", "italian")
 a.speak("holidays")
 a.eat_milk_and_cookies("choco chip cookie")
 
 a.reindeer_name
 a.santa_age
+
 
 #add some diverse initializations
 #have it print santa is overweight and underweight
