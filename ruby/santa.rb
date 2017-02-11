@@ -43,6 +43,11 @@ class Santa
 		p "You've been naughty, #{reindeer_new}! BAM! #{@reindeer_ranking}"
 		
 	end
+	#add a gender attribute that has a setter method
+	def gender=(new_gender)
+		@gender = new_gender
+		
+	end
 	
 
 end
@@ -55,6 +60,7 @@ a.reindeer_name
 a.santa_age
 a.celebrate_birthday
 a.get_mad_at("Dancer")
+p a.gender = "Jk Santa is a female"
 
 
 #add some diverse initializations
