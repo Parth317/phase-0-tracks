@@ -1,15 +1,15 @@
 #make a santa class, with methods to go along with it
 #also create an initialize method that will do many things
 class Santa
+	attr_reader :age, :ethnicity
+	attr_accessor :gender
+
 	def speak(holidays)
-		p "Ho, ho, ho! Haaaapy #{holidays}!"
-		
-	 	
+		p "Ho, ho, ho! Haaaapy #{holidays}!" 	
 	end
 
 	def eat_milk_and_cookies(type)
-		p "That was a good #{type}!"
-			
+		p "That was a good #{type}!"		
 	end
 
 	def initialize(gender, ethnicity)
@@ -24,12 +24,10 @@ class Santa
 
 	def reindeer_name
 		p "Santa's reindeer are #{@reindeer_ranking}"		
-
 	end
 
 	def santa_age
-		p "Santa's age is #{@age}"
-		
+		p "Santa's age is #{@age}"	
 	end
 
 	def celebrate_birthday
@@ -40,15 +38,22 @@ class Santa
 	def get_mad_at(reindeer_new)
 		@reindeer_ranking.delete(reindeer_new)
 		@reindeer_ranking.push(reindeer_new)
-		p "You've been naughty, #{reindeer_new}! BAM! #{@reindeer_ranking}"
-		
+		p "You've been naughty, #{reindeer_new}! BAM! #{@reindeer_ranking}"	
 	end
-	#add a gender attribute that has a setter method
-	def gender=(new_gender)
-		@gender = new_gender
-		
-	end
-	
+
+	##add a Setter method for a gender attribute 
+	#def gender=(new_gender)
+	#	@gender = new_gender	
+	#end
+	#
+	#	#add getter methods for age and ethnicity
+	#def age
+	#	@age	
+	#end
+#
+	#def ethnicity
+	#	@ethnicity	
+	#end
 
 end
 #Driver Code
@@ -61,6 +66,9 @@ a.santa_age
 a.celebrate_birthday
 a.get_mad_at("Dancer")
 p a.gender = "Jk Santa is a female"
+
+#getter method output
+puts "Santa is #{a.age} and he's #{a.ethnicity}"
 
 
 #add some diverse initializations
