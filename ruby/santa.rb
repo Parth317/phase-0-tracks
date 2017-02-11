@@ -34,6 +34,7 @@ class Santa
 	def celebrate_birthday
 		@new_age = @age + 1
 		p "Santa is now #{@new_age}"
+		#Set Santa's age to a random number between 0 and 140
 		@new_age = Array.new(1) {rand(0...140)}
 		p "Santa is #{@new_age}"
 
