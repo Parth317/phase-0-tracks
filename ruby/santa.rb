@@ -34,6 +34,9 @@ class Santa
 	def celebrate_birthday
 		@new_age = @age + 1
 		p "Santa is now #{@new_age}"
+		@new_age = Array.new(1) {rand(0...140)}
+		p "Santa is #{@new_age}"
+
 	end
 
 	def get_mad_at(reindeer_new)
@@ -69,6 +72,7 @@ a.celebrate_birthday
 a.get_mad_at("Dancer")
 p a.gender = "Jk Santa is a female"
 
+
 #getter method output
 puts "Santa is #{a.age} and he's #{a.ethnicity}"
 
@@ -94,6 +98,7 @@ example_genders.length.times do |i|
 	 		end
 	 	end 	
 p santas.sample
+
   
 end
 
