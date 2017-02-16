@@ -17,13 +17,14 @@ class VirusPredictor
   end
   #combines the results of predicted_deaths and speed_of_spread
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
-  end
+    predicted_deaths
+    speed_of_spread
+      end
 
   private
   #takes the number in the population_density parameter and checks if it meets the condition
   #then sets the number of deaths to a certain condition
+=begin
   def predicted_deaths(population_density, population, state)
     # predicted deaths is solely based on population density
     if @population_density >= 200
@@ -37,12 +38,30 @@ class VirusPredictor
     else
       number_of_deaths = (@population * 0.05).floor
     end
+=end
+#create a more DRY version of predicted_deaths
+def predicted_deaths#(population_density, population, state)
+  pct = case
+        when @population_density >= 200 
+          0.4
+        when @population_density >= 150 
+          0.3
+        when @population_density >= 100 
+          0.2
+        when @population_density >= 50 
+          0.1
+        else
+          0.05
+        end
 
-    print "#{@state} will lose #{number_of_deaths} people in this outbreak"
+ p "#{@state} will lose #{ (@population * pct).floor } people in this outbreak"
+end
+    #print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
-  end
+  #end
   #incrementing the speed based on the number of population_density
-  def speed_of_spread(population_density, state) #in months
+=begin
+  def speed_of_spread     #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
     speed = 0.0
@@ -62,7 +81,25 @@ class VirusPredictor
     puts " and will spread across the state in #{speed} months.\n\n"
 
   end
+=end
+#create a more DRY version of speed_of_spread
+  def speed_of_spread
+   speed = 0.0
+speed_hi = case
+        when @population_density >= 200 
+          0.5
+        when @population_density >= 150 
+          1
+        when @population_density >= 100 
+          1.5
+        when @population_density >= 50 
+          2
+        else
+          2.5
+        end
+    p " and will spread across the state in #{speed += speed_hi} months."
 
+end
 end
 
 #=======================================================================
