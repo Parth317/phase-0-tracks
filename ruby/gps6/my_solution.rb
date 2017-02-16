@@ -54,7 +54,7 @@ def predicted_deaths#(population_density, population, state)
           0.05
         end
 
- p "#{@state} will lose #{ (@population * pct).floor } people in this outbreak"
+ print "#{@state} will lose #{ (@population * pct).floor } people in this outbreak"
 end
     #print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
@@ -97,7 +97,7 @@ speed_hi = case
         else
           2.5
         end
-    p " and will spread across the state in #{speed += speed_hi} months."
+    puts " and will spread across the state in #{speed += speed_hi} months.\n\n"
 
 end
 end
