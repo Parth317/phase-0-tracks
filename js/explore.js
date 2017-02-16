@@ -11,4 +11,8 @@ function reverse_string(str) {
 	var reverse_letters = split_string.reverse();
 	//this will make the array a string again
 	var make_string = reverse_letters.join("");
-	
+	//return the string that should be reversed
+	return make_string;
+}
+
+reverse_string("Hello");
