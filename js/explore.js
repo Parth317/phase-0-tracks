@@ -13,6 +13,9 @@ function reverse_string(str) {
 	var make_string = reverse_letters.join("");
 	//return the string that should be reversed
 	return make_string;
-}
 
-reverse_string("Hello");
+
+}
+if (1 == 1) {
+console.log(reverse_string("Hello"));
+}
