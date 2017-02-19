@@ -11,13 +11,10 @@ names.push("Joe");
 //each element of colors into a value of the same hash
 //element.length can vary
 
-// var horses = {
-// 	horse_name: ""
-// }
+horses = {}
 
-for (var i = 0; i < colors.length; i++) {
-	var horses = {}
-	horses["horse_name"] = colors[i];
+for (var i = 0; i < names.length; i++) {
+	horses[names[i]] = colors[i]
 }
 
 console.log(horses)
