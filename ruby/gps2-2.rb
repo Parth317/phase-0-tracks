@@ -49,12 +49,32 @@ end
 
 
 #create a method that will remove an item from the list
-def 
-	
+def remove_item(new_item, groceries_list)
+	groceries_list.delete(new_item)
+	groceries_list
 end
 
+#method to update the quantity of an item
+def update_quantity(new_item, groceries_list, quantity)
+	groceries_list[new_item] = quantity
+	groceries_list
+end
 
+#method to make it look pretty
+def cool_list(grocery_list)
+	puts "Grocery List"
+	puts
+	grocery_list.each do |item, quantity|
+	puts "#{item.capitalize} : #{quantity}"
+	puts
+end
+	
+end
 
 #DRVER CODE
 list = create_list("apples oranges bananas")
 p add_item("grapefruit",list, 3)
+p remove_item("apples", list)
+p update_quantity("bananas", list, 335)
+p cool_list(list)
+
