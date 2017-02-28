@@ -35,18 +35,26 @@ def create_list(groceries)
 	quantity = 1
 	grocery_list[item] = quantity
 
+
 end
 return grocery_list
 end
 
 #create a method that will add item(s) to a list
-def add_item(new_item, groceries_list)
-	
+def add_item(new_item, groceries_list, quantity)
+	groceries_list[new_item] = quantity
+	quantity = 1
+	return groceries_list
 end
 
 
 #create a method that will remove an item from the list
+def 
+	
+end
+
 
 
 #DRVER CODE
-p create_list("apples oranges bananas")
+list = create_list("apples oranges bananas")
+p add_item("grapefruit",list, 3)
