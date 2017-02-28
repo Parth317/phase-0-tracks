@@ -72,9 +72,9 @@ end
 end
 
 #DRVER CODE
-list = create_list("apples oranges bananas")
+list = create_list("lemonade tomatoes onions icecream")
 p add_item("grapefruit",list, 3)
-p remove_item("apples", list)
-p update_quantity("bananas", list, 335)
+p remove_item("lemonade", list)
+p update_quantity("ice cream", list, 335)
 p cool_list(list)
 
