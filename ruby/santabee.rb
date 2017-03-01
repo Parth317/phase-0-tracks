@@ -30,6 +30,10 @@ class Santa
 		p "You've been naughty, #{reindeer_mad}! BYE #{@reindeer_ranking}"
 	end
 
+	def genders(gender)
+		@gender = gender
+	end
+
 end
 	#DRIVER CODE
 	p santyl = Santa.new("male", "alien")
@@ -37,6 +41,7 @@ end
 	santyl.eat_milk_and_cookies("choco chip")
 	santyl.celebrate_birthday
 	santyl.get_mad_at("Dasher")
+	p santyl.genders("Santa has no gender")
 
 	#add driverse initializations
 =begin
