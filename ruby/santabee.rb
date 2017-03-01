@@ -1,5 +1,6 @@
 class Santa
-
+	attr_reader :ethnicity, :age
+	attr_accessor :gender
 	def speak(holidays)
 		p "Ho, ho, ho! Haaapy #{holidays}!"
 	end
@@ -30,18 +31,6 @@ class Santa
 		p "You've been naughty, #{reindeer_mad}! BYE #{@reindeer_ranking}"
 	end
 
-	def genders(gender)
-		@gender = gender
-	end
-
-	def age
-		@age
-	end
-
-	def ethnicity
-		@ethnicity
-	end
-
 end
 	#DRIVER CODE
 	p santyl = Santa.new("male", "alien")
@@ -49,7 +38,7 @@ end
 	santyl.eat_milk_and_cookies("choco chip")
 	santyl.celebrate_birthday
 	santyl.get_mad_at("Dasher")
-	p santyl.genders("Santa has no gender")
+	p santyl.gender = "Santa has no gender"
 	p santyl.ethnicity
 	p santyl.age
 	#add driverse initializations
