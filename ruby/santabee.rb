@@ -19,16 +19,31 @@ class Santa
 		p "Santa's reindeer in order are #{@reindeer_ranking}"
 	end
 
+	def celebrate_birthday
+		@bday_age = @age + 1
+		p "Santa just turned #{@bday_age}!"
+	end
+
+	def get_mad_at(reindeer_mad)
+		@reindeer_ranking.delete(reindeer_mad)
+		@reindeer_ranking.push(reindeer_mad)
+		p "You've been naughty, #{reindeer_mad}! BYE #{@reindeer_ranking}"
+	end
+
 end
 	#DRIVER CODE
 	p santyl = Santa.new("male", "alien")
 	santyl.speak("holidays")
 	santyl.eat_milk_and_cookies("choco chip")
+	santyl.celebrate_birthday
+	santyl.get_mad_at("Dasher")
 
 	#add driverse initializations
+=begin
 	santas = []
 	example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
 example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 example_genders.length.times do |i|
   santas << Santa.new(example_genders[i], example_ethnicities[i])
 end
+=end
