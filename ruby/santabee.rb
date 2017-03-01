@@ -34,6 +34,14 @@ class Santa
 		@gender = gender
 	end
 
+	def age
+		@age
+	end
+
+	def ethnicity
+		@ethnicity
+	end
+
 end
 	#DRIVER CODE
 	p santyl = Santa.new("male", "alien")
@@ -42,7 +50,8 @@ end
 	santyl.celebrate_birthday
 	santyl.get_mad_at("Dasher")
 	p santyl.genders("Santa has no gender")
-
+	p santyl.ethnicity
+	p santyl.age
 	#add driverse initializations
 =begin
 	santas = []
