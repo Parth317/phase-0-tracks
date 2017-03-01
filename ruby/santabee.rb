@@ -1,13 +1,6 @@
 class Santa
 	attr_reader :ethnicity, :age
 	attr_accessor :gender
-	def speak(holidays)
-		p "Ho, ho, ho! Haaapy #{holidays}!"
-	end
-
-	def eat_milk_and_cookies(cookie_type)
-		p "That was a good #{cookie_type}!"
-	end
 
 	def initialize(gender, ethnicity)
 		p "Initializing Santa instance..."
@@ -16,9 +9,17 @@ class Santa
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", 
 			"Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 		@age = 0
-		p "Santa is #{@gender} and he's #{@ethnicity}"
-		p "Santa's reindeer in order are #{@reindeer_ranking}"
+		
 	end
+
+	def speak(holidays)
+		p "Ho, ho, ho! Haaapy #{holidays}!"
+	end
+
+	def eat_milk_and_cookies(cookie_type)
+		p "That was a good #{cookie_type}!"
+	end
+
 
 	def celebrate_birthday
 		@bday_age = @age + 1
@@ -41,12 +42,25 @@ end
 	p santyl.gender = "Santa has no gender"
 	p santyl.ethnicity
 	p santyl.age
-	#add driverse initializations
-=begin
+	
+	#add driverse initializations and create more santas
+
+def more_santas
 	santas = []
 	example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
-example_genders.length.times do |i|
-  santas << Santa.new(example_genders[i], example_ethnicities[i])
+	example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+		
+	8.times do 
+		santas << Santa.new(example_genders.sample, example_ethnicities.sample)
+	end
+	santas
 end
-=end
+
+p more_santas
+
+
+
+
+
+
+
