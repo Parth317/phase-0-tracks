@@ -91,3 +91,17 @@ STATE_DATA.each do |states, population_data|
 end
 #=======================================================================
 # Reflection Section
+
+#The difference between the two different hash syntaxes would be that one was holding all of 
+#the symbols, and the other was holding the string values
+
+#require relative takes one file's code, and combines it into another file
+
+#you can iterate through a hash by using blocks
+
+#the code was redundant and not neccessary
+
+#I ended up having a better understanding of making methods more DRY, and creating instances with keys
+
+
+
