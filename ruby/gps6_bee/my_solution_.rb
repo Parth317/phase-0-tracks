@@ -4,25 +4,26 @@
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
+#require_relative allows you to access data from another file
 #
-#
-require_relative 'state_data'
+require_relative 'state_data_'
 
 class VirusPredictor
-
+  #will intiialize all of the instances within the class, and be in th parameters of the method 
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
     @population_density = population_density
   end
-
+  #calls predicted_deaths and speed_of_spread
   def virus_effects
     predicted_deaths(@population_density, @population, @state)
     speed_of_spread(@population_density, @state)
   end
 
   private
-
+  #takes the number in population_density parameter and check to see if it meets the condition,
+  # then it will set the number of deaths to a certain condition
   def predicted_deaths(population_density, population, state)
     # predicted deaths is solely based on population density
     if @population_density >= 200
@@ -40,7 +41,7 @@ class VirusPredictor
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
   end
-
+  #checks the population_density parameter and it will adjust the speed based on the population_density
   def speed_of_spread(population_density, state) #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
