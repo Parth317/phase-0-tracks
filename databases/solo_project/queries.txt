@@ -1,0 +1,32 @@
+#1
+sqlite> SELECT * FROM books;
+1|1984|15
+2|A Brave New World|12
+3|The Shining|22
+
+#2
+sqlite> SELECT * FROM books
+   ...> ;
+1|1984|15
+2|A Brave New World|12
+3|The Shining|22
+sqlite> UPDATE books SET chapters=20 WHERE title="1984";
+sqlite> SELECT * FROM books;
+1|1984|20
+2|A Brave New World|12
+3|The Shining|22
+sqlite> .exit
+
+#3
+SELECT * FROM authors, books WHERE books.book_id = books.id;
+
+#4
+sqlite> SELECT authors.firstname, books.title FROM authors JOIN books ON authors.book_id = books.id;
+
+#5
+sqlite> DELETE FROM books WHERE chapters = 22;
+sqlite> SELECT * FROM books;
+1|1984|20
+2|A Brave New World|12
+sqlite> .exit
+
