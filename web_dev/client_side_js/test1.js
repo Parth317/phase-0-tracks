@@ -9,3 +9,7 @@ var paraText = document.createTextNode("This is way too large!");
 newParagraph.appendChild(paraText);
 var container = document.getElementById('container');
 container.appendChild(newParagraph);
+
+function changeSize(event)
+{event.target.style.fontSize = "2em"};
+header.addEventListener("click", changeSize);
