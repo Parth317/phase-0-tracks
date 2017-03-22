@@ -6,3 +6,27 @@ h1 {
 	color: #1EA362;
 	font-family: arial;
 }
+.main {
+	margin-top: 80px;
+}
+form input {
+	background: #E9EBEE;
+	border: none;
+	border-left: 2px solid #fff;
+	font-size: 35px;
+	padding: 20px;
+	width: 100%;
+}
+
+button.btn {
+	background: transparent;
+	border: none;
+	color: #1EA362;
+	cursor: pointer;
+	font-size: 35px;
+	padding: 20px 24px;
+}
+
+.statuses {
+	margin-top: 30px;
+}
