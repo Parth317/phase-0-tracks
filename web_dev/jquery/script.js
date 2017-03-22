@@ -6,6 +6,7 @@ var main = function() {
 		if (status != "") {
 			var html = $('<li>').text(status);
 			html.prependTo('#statuses');
+			//gets rid of text entered in form after clicking Post
 			$input.val("");
 		}
 		return false;
