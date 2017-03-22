@@ -1,0 +1,1 @@
+I plan on tackling jQuery by looking up YouTube video tutorials, finding cheat sheets, and some other forms of readings online. I'll take notes of anything that I find to be super important. 
