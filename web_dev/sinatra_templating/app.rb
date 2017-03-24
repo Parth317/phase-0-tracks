@@ -27,8 +27,8 @@ end
 
 #create young student list 
 get '/students/young' do 
-	erb :young_students
 	@students = db.execute("SELECT * FROM students WHERE age <= 50")
+	erb :young_students	
 end
 
 
