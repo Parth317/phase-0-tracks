@@ -17,11 +17,19 @@ get '/students/new' do
   erb :new_student
 end
 
+
 # create new students via
 # a form
 post '/students' do
   db.execute("INSERT INTO students (name, campus, age) VALUES (?,?,?)", [params['name'], params['campus'], params['age'].to_i])
   redirect '/'
 end
+
+#create young student list 
+get '/students/young' do 
+	@students = db.execute("SELECT * FROM students WHERE age <= 50")
+	erb :young_students	
+end
+
 
 # add static resources
