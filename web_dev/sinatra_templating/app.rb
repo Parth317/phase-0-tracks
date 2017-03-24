@@ -17,6 +17,7 @@ get '/students/new' do
   erb :new_student
 end
 
+
 # create new students via
 # a form
 post '/students' do
@@ -27,8 +28,8 @@ end
 #create young student list 
 get '/students/young' do 
 	erb :young_students
+	@students = db.execute("SELECT * FROM students WHERE age <= 50")
 end
-
 
 
 # add static resources
