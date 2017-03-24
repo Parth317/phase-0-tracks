@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>List of Young Students</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+	<h1>Students Enrolled Under 50</h1>
+	<ul>
+	<% if age <= 50 %>	
+    <% @students.each do |student| %>
+      <li><%= student['name'] %>, <%= student['age'] %></li>
+    <% end %>
+    <% end %>
+  </ul>
 </body>
 </html>

@@ -24,4 +24,11 @@ post '/students' do
   redirect '/'
 end
 
+#create young student list 
+get '/students/young' do 
+	erb :young_students
+end
+
+
+
 # add static resources
